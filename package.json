@@ -20,6 +20,7 @@
   "homepage": "https://github.com/LinYunWen/data-collect-web#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "core-js": "^3.1.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.0"
