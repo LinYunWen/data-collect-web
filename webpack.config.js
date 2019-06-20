@@ -4,10 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: "development",
     entry: {
+        windowHander: './windowHandler.js',
         index: './index.js'
     },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve('./dist')
     },
     target: 'web',

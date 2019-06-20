@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
-import data from "../data";
+import { members } from "../data";
 
 export class Header extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ export class Header extends React.Component {
     this.state = {
       isOpen: false,
       type: "none",
-      curMember: data.members[0]
+      curMember: members[0]
     };
   }
 
@@ -39,7 +39,7 @@ export class Header extends React.Component {
   }
 
   createMembers() {
-    return data.members.map((member, index) => {
+    return members.map((member, index) => {
       return (
         <DropdownItem key={index}>
           {member.name}
