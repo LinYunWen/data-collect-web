@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: "development",
     entry: {
-        windowHander: './windowHandler.js',
-        index: './index.js'
+        windowHander: './src/windowHandler.js',
+        index: './src/index.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -82,7 +82,7 @@ module.exports = {
     optimization: {},
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html'
+            template: './src/index.html'
         })
     ]
 };
