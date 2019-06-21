@@ -35,3 +35,10 @@ export const constraints = {
         frameRate: { exact: 30, ideal: 30 },
     }
 }
+
+export const texts = [
+    {
+        alphabet: "fhdjsa;fhjl",
+        text: "fdsjka;fdjsk;a"
+    }
+]

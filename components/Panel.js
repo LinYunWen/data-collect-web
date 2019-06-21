@@ -11,8 +11,8 @@ export class Panel extends React.Component {
     render() {
         return (
             <Col>
-                <VideoPane />
-                {/* <TextPane /> */}
+                {/* <VideoPane /> */}
+                <TextPane />
             </Col>
         );
     }

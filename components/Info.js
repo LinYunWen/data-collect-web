@@ -25,11 +25,35 @@ export class Info extends React.Component {
             <Col xs="3">
                 <Container>
                     <Row><Col>
-                        <h5>Video</h5>
+                        <Container>
+                            <Row><Col>
+                                <h5>Type</h5>
+                            </Col></Row>
+                            <Row><Col>
+                                <span>Text</span>
+                            </Col></Row>
+                        </Container>
                     </Col></Row>
-                    <Row><Col>{this.createInfoList("video")}</Col></Row>
-                    {/* <Row><Col>Audio</Col></Row>
-                    <Row><Col>{this.createInfoList("audio")}</Col></Row> */}
+                    <Row><Col>
+                        <Container>
+                            <Row><Col>
+                                <h5>Video</h5>
+                            </Col></Row>
+                            <Row><Col>
+                                {this.createInfoList("video")}
+                            </Col></Row>
+                        </Container>
+                    </Col></Row>
+                    <Row><Col>
+                        <Container>
+                            <Row><Col>
+                                <h5>Audio</h5>
+                            </Col></Row>
+                            <Row><Col>
+                                {/* {this.createInfoList("audio")} */}
+                            </Col></Row>
+                        </Container>
+                    </Col></Row>
                 </Container>
             </Col>
         );
