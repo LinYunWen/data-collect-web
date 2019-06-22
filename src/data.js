@@ -40,5 +40,13 @@ export const texts = [
     {
         alphabet: "fhdjsa;fhjl",
         text: "fdsjka;fdjsk;a"
+    },
+    {
+        alphabet: "Hello world",
+        text: "fdsjka;fdjsk;a"
+    },
+    {
+        alphabet: "LinYunWen",
+        text: "fdsjka;fdjsk;a"
     }
 ]

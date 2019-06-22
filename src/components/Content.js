@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row } from "reactstrap";
 import { Info } from "./Info";
 import { Panel } from "./Panel";
+import cls from "../style.scss";
 
 export class Content extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ export class Content extends React.Component {
     render() {
         return (
             <Container fluid={true}>
-                <Row>
+                <Row className={cls.contentRow}>
                     <Info />
                     <Panel />
                 </Row>

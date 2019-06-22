@@ -10,7 +10,7 @@ export class Panel extends React.Component {
 
     render() {
         return (
-            <Col>
+            <Col xs="9">
                 {/* <VideoPane /> */}
                 <TextPane />
             </Col>
