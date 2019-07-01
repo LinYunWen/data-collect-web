@@ -1,6 +1,10 @@
 .DS_Store
 .vscode
+package-lock.json
+src/backend/package-lock.json
 node_modules
+src/backend/node_modules
 
 build/*
 dist/*
+src/backend/key/*
