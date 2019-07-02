@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import cls from "../style.scss";
+import { ControlButtons } from './ControlButtons';
 
 export class VideoPane extends React.Component {
     constructor(props) {
@@ -24,6 +25,7 @@ export class VideoPane extends React.Component {
                 <Row><Col>
                     <canvas id="snapshot"></canvas>
                 </Col></Row>
+                <ControlButtons />
             </Container>
         );
     }

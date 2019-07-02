@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from "reactstrap";
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import { ControlButtons } from "./ControlButtons";
 import cx from "classnames";
 import cls from "../style.scss";
 import { texts } from "../data";
@@ -58,7 +59,7 @@ export class TextPane extends React.Component {
   createSlides() {
     return texts.map((item, index) => {
       return (
-        <CarouselItem key={index} onExiting={this.onExiting} onExited={this.onExited}>
+        <CarouselItem key={index} onExiting={this.onExiting} onExited={this.onExited} interval={false}>
           <Container className={cls.height100pa}>
             <Row className={cls.height100pa}>
               <Col className={cls.marginAuto}>
@@ -99,32 +100,7 @@ export class TextPane extends React.Component {
               </Carousel>
             </Col>
           </Row>
-          <Row style={{ padding: "10px 0"}}>
-            <Col className={cls.textAlignCenter}>
-              <span className={cls.marginRight10}>
-                <Button id="record" color="info" className={buttonClass.record}
-                  onClick={() => {
-                    this.changeMode("recordMode", "record");
-                    this.changeMode("playMode", "default");
-                  }}
-                >Record</Button>
-                <Button id="stop" color="danger" className={buttonClass.stop}
-                  onClick={() => {
-                    this.changeMode("recordMode", "stop");
-                    this.changeMode("playMode", "stop");
-                  }}
-                >Stop</Button>
-              </span>
-              <span>
-                <Button id="play-record" color="success" className={buttonClass.playRecord}
-                  onClick={() => { this.changeMode("playMode", "play"); }}
-                >Play your record</Button>
-                <Button id="stop-playing" color="danger" className={buttonClass.stopPlaying}
-                  onClick={() => { this.changeMode("playMode", "stop"); }}
-                >Stop playing</Button>
-              </span>
-            </Col>
-          </Row>
+          <ControlButtons />
         </Container>
       </Col>
     )
