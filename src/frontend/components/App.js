@@ -3,6 +3,8 @@ import "regenerator-runtime/runtime";
 import React from 'react';
 import { Header } from "./Header";
 import { Content } from "./Content";
+import { Notification } from "./Notification";
+import { AppModal } from "./AppModal";
 
 class App extends React.Component {
     constructor(props) {
@@ -12,6 +14,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <AppModal />
+                <Notification />
                 <Header />
                 <Content />
             </div>
